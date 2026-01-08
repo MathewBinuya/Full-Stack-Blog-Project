@@ -1,0 +1,25 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "description": "Simple Login and Register w upload FEA: CRUD",
+  "homepage": "https://github.com/MathewBinuya/Full-Stack-Blog-Project#readme",
+  "bugs": {
+    "url": "https://github.com/MathewBinuya/Full-Stack-Blog-Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathewBinuya/Full-Stack-Blog-Project.git"
+  },
+  "license": "ISC",
+  "author": "mathewbinuya",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.2"
+  }
+}
