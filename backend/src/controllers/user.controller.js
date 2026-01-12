@@ -9,6 +9,12 @@ const registerUser = async (req, res) => {
       return res.status(400).json({message: "All fields are important!"});
     }
 
+    if(password.length < 6) {
+      return res.status(400).json({
+        message: "Password must be at least 6 characters"
+      })
+    }
+
     // Check if exist or not
     const existOrNot = await User.findOne({email: email.toLowerCase()});
 
@@ -37,8 +43,8 @@ const registerUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
   try {
-    // check user if already exist
     
+    // check user if already exist
     const {email, password} = req.body
 
     const user = await User.findOne({
@@ -71,11 +77,6 @@ const loginUser = async (req, res) => {
 
   }
 }
-
-
-
-
-
 
 export {
   registerUser,
