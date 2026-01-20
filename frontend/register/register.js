@@ -30,7 +30,7 @@ form.addEventListener("submit", async (e) => {
 
       alert("Registration sucessful! Please login.");
 
-      window.location.href = "login.html";
+      window.location.href = "/frontend/register/register.html";
 
 
   } catch (error) {
