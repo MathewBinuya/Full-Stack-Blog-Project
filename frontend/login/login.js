@@ -23,7 +23,7 @@ form.addEventListener("submit", async (e) => {
 
   localStorage.setItem("token", data.token);
 
-  window.location.href = "/frontend/home-page/home.html";
+  window.location.href = "/frontend/home/home.html";
 
   } catch (error) {
     console.error("Login error: ", error);
